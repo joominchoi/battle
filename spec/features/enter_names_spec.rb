@@ -11,3 +11,13 @@ feature 'Enter names' do
   end
 end
 
+feature 'View HP' do
+  scenario 'see Player 2 HP' do
+    visit('/')
+    fill_in :player_1_name, with: 'Charmander'
+    fill_in :player_2_name, with: 'Squirtle'
+    click_button 'Submit'
+    expect(page).to have_content 'Squirtle: 100HP'
+  end
+end
+
