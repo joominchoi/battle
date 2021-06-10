@@ -29,6 +29,7 @@ GEM
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     regexp_parser (2.1.1)
+    rexml (3.2.4)
     rspec (3.10.0)
       rspec-core (~> 3.10.0)
       rspec-expectations (~> 3.10.0)
@@ -70,11 +71,12 @@ PLATFORMS
 DEPENDENCIES
   capybara
   launchy
+  rexml
   rspec
   selenium-webdriver
   sinatra
   sinatra-contrib
-  webrick
+  webrick (~> 1.7)
 
 BUNDLED WITH
    2.2.19
